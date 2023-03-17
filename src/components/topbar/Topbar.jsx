@@ -18,7 +18,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     </div>
                 </div>
                 <div className="right">
-                    <div className="hamburger">
+                    <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                         <span className="line 1"></span>
                         <span className="line 2"></span>
                         <span className="line 3"></span>
