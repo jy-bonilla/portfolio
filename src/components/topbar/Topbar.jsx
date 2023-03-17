@@ -4,13 +4,15 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
     return (
-        <div className={"topbar" + (menuOpen && "active")}>
+        <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo"> genius.</a>
+                    <a href="#intro" className="logo">
+                        bonillaCodes.
+                    </a>
                     <div className="itemContainer">
                         <PersonIcon className="icon" />
-                        <span> 540.398.1266</span>
+                        <span>540.398.1266</span>
                     </div>
                     <div className="itemContainer">
                         <EmailIcon className="icon" />
@@ -19,12 +21,12 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                 </div>
                 <div className="right">
                     <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-                        <span className="line 1"></span>
-                        <span className="line 2"></span>
-                        <span className="line 3"></span>
+                        <span className="line1"></span>
+                        <span className="line2"></span>
+                        <span className="line3"></span>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
