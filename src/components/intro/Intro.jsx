@@ -10,8 +10,8 @@ export default function Intro() {
         const typed = new Typed(el.current, {
             strings: ["Developer", "UI/UX Designer"],
             startDelay: 200,
-            typeSpeed: 100,
-            backSpeed: 100,
+            typeSpeed: 70,
+            backSpeed: 55,
             backDelay: 500,
             loop: true,
             showCursor: true,
@@ -39,7 +39,7 @@ export default function Intro() {
                     </h3>
                 </div>
                 <a href="#portfolio">
-                    <img src="assets/down.png" alt="" />
+                    <img src="assets/down.png" alt="down arrow" />
                 </a>
             </div>
 
