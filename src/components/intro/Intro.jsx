@@ -1,15 +1,28 @@
 import "./intro.scss";
-import { init } from "ityped";
+import Typed from 'typed.js';
 import { useEffect, useRef } from "react";
 
+
 export default function Intro() {
-    const textRef = useRef();
+    const el = useRef(null);
+
     useEffect(() => {
-        init(textRef.current, {
-            showCursor: false,
-            strings: ['Developer', 'Designer', 'Content Creater'],
+        const typed = new Typed(el.current, {
+            strings: ["Developer", "UI/UX Designer"],
+            startDelay: 200,
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 500,
+            loop: true,
+            showCursor: true,
+
         });
+        // Destropying
+        return () => {
+            typed.destroy();
+        };
     }, []);
+
     return (
         <div className="intro" id="intro">
             <div className="left">
@@ -21,7 +34,9 @@ export default function Intro() {
                 <div className="wrapper">
                     <h2>Hello, I'm</h2>
                     <h1>José Bonilla</h1>
-                    <h3>Freelance <span ref={textRef}></span></h3>
+                    <h3>Freelance {' '}
+                        <span ref={el}></span>
+                    </h3>
                 </div>
                 <a href="#portfolio">
                     <img src="assets/down.png" alt="" />
