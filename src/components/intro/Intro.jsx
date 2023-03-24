@@ -17,7 +17,7 @@ export default function Intro() {
             showCursor: true,
 
         });
-        // Destropying
+        // DestroyTyping
         return () => {
             typed.destroy();
         };
