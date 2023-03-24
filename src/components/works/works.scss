@@ -24,9 +24,10 @@
 
     .slider {
         height: 350px;
-        display: flex;
+        display: flex; 
         position: absolute;
         left: 0;
+        transition: all 1s ease-out;
 
 
         .container {
