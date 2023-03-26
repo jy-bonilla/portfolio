@@ -16,7 +16,7 @@ export default function Contact() {
             <div className="right">
                 <h2>Contact</h2>
                 <form onSubmit={handleSubmit}>
-                    <input type="text" placeHolder="Email" />
+                    <input type="text" placeholder="Email" />
                     <textarea placeholder="Message"></textarea>
                     <button type="submit">Send</button>
                     {message && <span>Thanks, I will reply ASAP</span>}
