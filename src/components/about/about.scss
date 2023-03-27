@@ -1,0 +1,10 @@
+@import "../../global.scss";
+
+.paragraph {
+    background-color: whitesmoke;
+    font-weight: 500;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}

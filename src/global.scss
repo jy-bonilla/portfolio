@@ -1,9 +1,9 @@
-$maincolor: purple;
+$maincolor: #0a1a2f;
 
 $width: 768px;
 
-@mixin mobile{
-    @media(max-width: #{$width}){
+@mixin mobile {
+    @media(max-width: #{$width}) {
         @content
     }
 }
