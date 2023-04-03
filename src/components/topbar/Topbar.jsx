@@ -8,11 +8,11 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">
-                        bonillaCodes.
+                        genius.
                     </a>
                     <div className="itemContainer">
                         <PersonIcon className="icon" />
-                        <span>540.398.1266</span>
+                        <span>5406628968</span>
                     </div>
                     <div className="itemContainer">
                         <EmailIcon className="icon" />
