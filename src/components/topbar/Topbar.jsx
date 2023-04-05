@@ -4,19 +4,48 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
     return (
-        <div className={"topbar " + (menuOpen && "active")}>
-            <div className="wrapper">
+
+        <nav className={"topbar " + (menuOpen && "active")}>
+            <div className="logo">
+                <a href="#intro" className="logo">
+                    bonillaCodes.
+                </a>
+            </div>
+            <ul className="primary-navigation">
+                <li>
+                    <a href="#works">works</a>
+                </li>
+                <li>
+                    <a href="#portfolio">portfolio</a>
+                </li>
+            </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+            {/* <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">
-                        genius.
+                        bonillaCodes.
                     </a>
+                    <a href="#about">about</a>
+                    <a href="#portfolio">portfolio</a>
+                    <a href="#works">works</a>
+                    <a href="#testimonials">testimonials</a>
+                    <a href="#contact">contact</a>
                     <div className="itemContainer">
                         <PersonIcon className="icon" />
-                        <span>5406628968</span>
                     </div>
                     <div className="itemContainer">
                         <EmailIcon className="icon" />
-                        <span>jy.bonillagil@gmail.com</span>
                     </div>
                 </div>
                 <div className="right">
@@ -26,7 +55,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                         <span className="line3"></span>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> */}
+        </nav>
     );
 }
