@@ -9,23 +9,56 @@
     top: 0;
     z-index: 3;
     transition: all 1s ease;
+    display: flex;
+    align-items: center;
 
 
-    .logo {
-        margin: 2rem;
-        text-decoration: none;
+
+
+    .wrapper {
+        display: flex;
+
+
+        .logo {
+            margin: 2rem;
+            text-decoration: none;
+        }
+
+        .primary-navigation {
+            display: flex;
+            align-items: center;
+
+            a {
+                padding-left: 1rem;
+                text-decoration: none;
+            }
+        }
+
+        .itemContainer {
+            display: flex;
+            align-items: center;
+            margin-left: 5rem;
+        }
+
+        .personIcon {
+            margin-left: 2rem;
+        }
     }
 
 
 
     .right {
         .hamburger {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
             width: 32px;
             height: 25px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             cursor: pointer;
+            margin-left: 10rem;
 
             span {
                 width: 100%;
