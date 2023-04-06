@@ -3,8 +3,7 @@
 .topbar {
     width: 100%;
     height: 70px;
-    background-color: white;
-    color: $maincolor;
+    background-color: #111111;
     position: fixed;
     top: 0;
     z-index: 3;
@@ -22,6 +21,9 @@
         .logo {
             margin: 2rem;
             text-decoration: none;
+            font-size: 40px;
+            font-weight: 700;
+            color: #ffffff
         }
 
         .primary-navigation {
@@ -31,6 +33,9 @@
             a {
                 padding-left: 1rem;
                 text-decoration: none;
+                font-size: 15px;
+                font-weight: 500;
+                color: #ffffff;
             }
         }
 
@@ -38,6 +43,7 @@
             display: flex;
             align-items: center;
             margin-left: 5rem;
+            color: #ffffff;
         }
 
         .personIcon {
@@ -63,7 +69,7 @@
             span {
                 width: 100%;
                 height: 3px;
-                background-color: $maincolor;
+                background-color: #ffffff;
                 transform-origin: left;
                 transition: all 2s ease;
             }

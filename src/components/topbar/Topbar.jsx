@@ -17,16 +17,16 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                         <a href="#about">about</a>
                     </li>
                     <li>
-                        <a href="#works">works</a>
+                        <a href="#blog">blog</a>
                     </li>
                     <li>
-                        <a href="portfolio">portfolio</a>
+                        <a href="#portfolio">portfolio</a>
                     </li>
                     <li>
-                        <a href="testimonials">testimonials</a>
+                        <a href="#testimonials">testimonials</a>
                     </li>
                     <li>
-                        <a href="contact">contact</a>
+                        <a href="#contact">contact</a>
                     </li>
                 </ul>
                 <div className="itemContainer">
