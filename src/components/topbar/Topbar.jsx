@@ -1,6 +1,8 @@
 import "./topbar.scss"
 import PersonIcon from '@mui/icons-material/Person';
 import EmailIcon from '@mui/icons-material/Email';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
     return (
@@ -31,7 +33,8 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                 </ul>
                 <div className="itemContainer">
                     <EmailIcon className="emailIcon" />
-                    <PersonIcon className="personIcon" />
+                    <TwitterIcon className="twitterIcon" />
+                    <LinkedInIcon className="linkedInIcon" />
 
                     <div className="right">
                         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
