@@ -5,7 +5,7 @@
 
 .menu {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     background-color: #222;
     position: fixed;
     top: 0;
@@ -22,13 +22,14 @@
     }
 
     ul {
+
         margin: 0;
         padding: 0;
         list-style: none;
         font-size: 30px;
         font-weight: 300;
         color: white;
-        width: 5%;
+        width: 15%;
 
         li {
             margin-bottom: 25px;
