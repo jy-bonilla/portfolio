@@ -14,17 +14,27 @@
 
 
 
+
     .wrapper {
         display: flex;
 
-
         .logo {
-            margin: 2rem;
+            margin: 1rem;
             text-decoration: none;
             font-size: 40px;
             font-weight: 700;
             color: #ffffff
         }
+
+        // @media screen and (max-width: 768px) {
+        //     .logo {
+        //         margin: 1rem;
+        //         font-size: 25px;
+        //     }
+        // }
+
+
+
 
         .primary-navigation {
             display: flex;
@@ -37,7 +47,10 @@
                 font-weight: 500;
                 color: #ffffff;
             }
+
         }
+
+
 
         .itemContainer {
             display: flex;
@@ -52,6 +65,7 @@
             margin-left: 2rem;
         }
 
+
         .linkedInIcon {
             margin-left: 2rem;
         }
@@ -59,48 +73,51 @@
 
 
 
-    .right {
-        .hamburger {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            width: 32px;
-            height: 25px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            cursor: pointer;
-            margin-left: 10rem;
+    @media screen and (max-width:828px) {
 
-            span {
-                width: 100%;
-                height: 3px;
-                background-color: #ffffff;
-                transform-origin: left;
-                transition: all 2s ease;
+        .right {
+            .hamburger {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                margin-left: 10rem;
+
+                span {
+                    width: 100%;
+                    height: 3px;
+                    background-color: #ffffff;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
             }
         }
-    }
 
 
-    &.active {
-        background-color: $maincolor;
-        color: white;
+        &.active {
+            background-color: $maincolor;
+            color: white;
 
-        .hamburger {
-            span {
-                &:first-child {
-                    background-color: white;
-                    transform: rotate(45deg);
-                }
+            .hamburger {
+                span {
+                    &:first-child {
+                        background-color: white;
+                        transform: rotate(45deg);
+                    }
 
-                &:nth-child(2) {
-                    opacity: 0;
-                }
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
 
-                &:last-child {
-                    background-color: white;
-                    transform: rotate(-45deg);
+                    &:last-child {
+                        background-color: white;
+                        transform: rotate(-45deg);
+                    }
                 }
             }
         }
