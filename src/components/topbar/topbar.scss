@@ -13,115 +13,165 @@
 
 
 
-
-
-
-
     .wrapper {
-
         display: flex;
         width: 100%;
         height: 80px;
         justify-content: space-between;
 
+        @media screen and (min-width: 830px) {
+            .logo {
+                padding: 1rem;
+                padding-right: 2rem;
+
+                a {
+
+                    text-decoration: none;
+                    font-size: 40px;
+                    font-weight: 700;
+                    color: #ffffff
+                }
+
+            }
+
+            .primary-navigation {
+
+                display: flex;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: #ffffff;
+                    padding-left: .2rem;
+                    padding-right: .5rem;
+                }
+            }
+
+            .itemContainer {
+                display: flex;
+                align-items: center;
+                color: #ffffff;
+                padding-right: 3rem;
+                padding-left: 1rem;
+                margin: 0;
+            }
+
+
+
+            .twitterIcon {
+                margin-left: 1rem;
+            }
+
+
+            .linkedInIcon {
+                margin-left: 1rem;
+            }
+
+            .emailIcon {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 829px) {
 
         .logo {
-            margin: 1rem;
-            text-decoration: none;
-            font-size: 40px;
-            font-weight: 700;
-            color: #ffffff
-        }
-
-        // @media screen and (min-width: 830px) {
-        //     .logo {
-        //         margin: 1rem;
-        //         font-size: 25px;
-        //     }
-        // }
-
-
-
-
-        .primary-navigation {
-            display: flex;
-            align-items: center;
+            padding: 1rem;
+            padding-right: 2rem;
 
             a {
-                padding-left: 1rem;
+
                 text-decoration: none;
-                font-size: 15px;
-                font-weight: 500;
+                font-size: 30px;
+                font-weight: 700;
                 color: #ffffff;
+                padding-right: 0rem;
             }
 
         }
 
-
+        .primary-navigation {
+            display: none;
+        }
 
         .itemContainer {
             display: flex;
             align-items: center;
-            margin-left: 8rem;
             color: #ffffff;
+            padding-right: 0rem;
+            padding-left: 0rem;
+
         }
-
-
 
         .twitterIcon {
-            margin-left: 2rem;
+            display: none;
         }
-
 
         .linkedInIcon {
-            margin-left: 2rem;
+            display: none;
         }
+
+        .emailIcon {
+            display: none;
+        }
+
     }
 
-
-
     .right {
-        .hamburger {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            width: 32px;
-            height: 25px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            cursor: pointer;
-            margin-left: 10rem;
+        @media screen and (max-width: 829px) {
+            padding-right: 0rem;
+            padding-left: 0rem;
 
-            span {
-                width: 100%;
-                height: 3px;
-                background-color: #ffffff;
-                transform-origin: left;
-                transition: all 2s ease;
+            .hamburger {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                margin-left: 10rem;
+                color: #ffffff;
+                padding-left: 0rem;
+                padding-right: 1.5rem;
+                margin-left: 2rem;
+
+
+                span {
+                    width: 100%;
+                    height: 3px;
+                    background-color: #ffffff;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
             }
         }
     }
 
+    @media screen and (max-width: 829px) {
+        &.active {
+            background-color: $maincolor;
+            color: white;
 
-    &.active {
-        background-color: $maincolor;
-        color: white;
+            .hamburger {
+                span {
+                    &:first-child {
+                        background-color: white;
+                        transform: rotate(45deg);
+                    }
 
-        .hamburger {
-            span {
-                &:first-child {
-                    background-color: white;
-                    transform: rotate(45deg);
-                }
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
 
-                &:nth-child(2) {
-                    opacity: 0;
-                }
-
-                &:last-child {
-                    background-color: white;
-                    transform: rotate(-45deg);
+                    &:last-child {
+                        background-color: white;
+                        transform: rotate(-45deg);
+                    }
                 }
             }
         }

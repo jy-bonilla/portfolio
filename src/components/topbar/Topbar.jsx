@@ -9,7 +9,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         <nav className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="logo">
-                    <a href="#intro" className="logo">
+                    <a href="#intro">
                         bonillaCodes.
                     </a>
                 </div>
