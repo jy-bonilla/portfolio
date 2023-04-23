@@ -1,15 +1,12 @@
 @import"../../global.scss";
 
 
-
-
 .menu {
     width: 100vw;
-    height: 90vh;
-    background-color: #222;
+    height: 100vh;
+    background-color: #222222;
     position: fixed;
-    top: 0;
-    top: -100vh;
+    top: -90vh;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -19,20 +16,50 @@
 
     &.active {
         top: 0;
+        padding-top: 2rem;
+
     }
 
     ul {
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 0;
         padding: 0;
         list-style: none;
         font-size: 30px;
         font-weight: 300;
         color: white;
-        width: 15%;
+
+
 
         li {
-            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            border-top: solid 2px #292929;
+            width: 100vw;
+
+
+
+
+            &:first-child {
+                border-top: none;
+            }
+
+            .emailIcon {
+                margin: 2rem;
+            }
+
+            .twitterIcon {
+                margin: 2rem;
+
+            }
+
+            .linkedInIcon {
+                margin: 2rem;
+            }
 
             a {
                 font-size: inherit;
@@ -43,6 +70,7 @@
             &:hover {
                 font-weight: 500;
             }
+
         }
     }
 }
