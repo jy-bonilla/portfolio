@@ -8,7 +8,7 @@ export default function Intro() {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["developer", "content creator", "designer"],
+            strings: ["a software developer", "designer"],
             startDelay: 200,
             typeSpeed: 70,
             backSpeed: 55,
@@ -34,15 +34,16 @@ export default function Intro() {
                 <div className="wrapper">
                     <h2>Hello, I'm</h2>
                     <h1>José Bonilla</h1>
-                    <h3>Freelance {' '}
+                    <h3><span ref={el}></span></h3>
+                    {/* <h3>Freelance {' '}
                         <span ref={el}></span>
-                    </h3>
+                    </h3> */}
                 </div>
                 <a href="#portfolio">
                     <img src="assets/down.png" alt="down arrow" />
                 </a>
-            </div>
+            </div >
 
-        </div>
+        </div >
     )
 }
