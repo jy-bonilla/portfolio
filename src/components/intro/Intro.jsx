@@ -35,9 +35,6 @@ export default function Intro() {
                     <h2>Hello, I'm</h2>
                     <h1>José Bonilla</h1>
                     <h3><span ref={el}></span></h3>
-                    {/* <h3>Freelance {' '}
-                        <span ref={el}></span>
-                    </h3> */}
                 </div>
                 <a href="#portfolio">
                     <img src="assets/down.png" alt="down arrow" />

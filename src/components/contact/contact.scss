@@ -1,81 +1,146 @@
 @import "../../global.scss";
 
 .contact {
-    background-color: #f5f8fd;
+    background-color: #ffffff;
     display: flex;
+    flex-direction: column;
+
 
     @include mobile {
+        display: flex;
         flex-direction: column;
     }
 
-    .left {
-        flex: 1;
-        overflow: hidden;
-
-        img {
-            height: 100%;
-        }
-    }
-
     .right {
-        flex: 1;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
         h2 {
+
+            margin-top: 20px;
+            padding: 13px 0 13px 0px;
+            margin-bottom: 10px;
             font-size: 30px;
+            overflow-y: hidden;
+
+            @include mobile {
+                padding-top: 10px;
+                font-size: 20px;
+            }
+
+        }
+
+        p {
+            padding: 10px 50px 10px 50px;
+            margin: 10px 0 10px 0;
+            font-size: 18px;
+            overflow-y: hidden;
+            width: 800px;
+            height: 80px;
+            color: #000;
+
+            @include mobile {
+                font-size: 15px;
+                width: 90vw;
+                height: 15vh;
+            }
+        }
+
+        .connect {
+            color: #ECD06F;
         }
 
         form {
-            width: 70%;
-            height: 70%;
+            padding-top: 15px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            width: 90vw;
+            height: 90vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-around;
+
+            @include mobile {
+                margin-bottom: 10px;
+            }
 
             input {
-                width: 300px;
-                height: 30px;
+                width: 700px;
+                height: 35px;
                 font-size: 14px;
+                margin-bottom: 20px;
+                border-radius: 5px;
 
                 @include mobile {
-                    width: 200px;
+                    width: 300px;
                     height: 20px;
                 }
             }
 
             textarea {
-                width: 300px;
+                width: 700px;
                 height: 200px;
                 font-size: 14px;
+                border-radius: 5px;
 
                 @include mobile {
-                    width: 200px;
+                    width: 300px;
                     height: 100px;
                 }
             }
 
             button {
                 width: 150px;
-                height: 30px;
-                color: white;
-                background-color: crimson;
+                height: 35px;
+                color: #ECD06F;
+                background-color: #000;
                 border: none;
                 border-radius: 10px;
                 font-weight: 500;
                 cursor: pointer;
+                margin-top: 20px;
 
                 &:focus {
                     outline: none;
+                }
+
+                @include mobile {
+                    width: 300px;
+                    height: 36px;
                 }
             }
 
             span {
                 color: green;
             }
+
         }
     }
+
+    footer {
+        width: 100vw;
+        height: 5vh;
+        padding: 2vh 0 2vh 0;
+        font-size: medium;
+
+
+        span {
+            margin-right: 40vw;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-right: 10vw;
+            align-items: center;
+            text-decoration: none;
+            color: red;
+
+        }
+    }
+
 }
