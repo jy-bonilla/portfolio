@@ -4,6 +4,7 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 
 
     @include mobile {
@@ -27,7 +28,7 @@
             overflow-y: hidden;
 
             @include mobile {
-                padding-top: 10px;
+                padding-top: 5px;
                 font-size: 20px;
             }
 
@@ -45,7 +46,7 @@
             @include mobile {
                 font-size: 15px;
                 width: 90vw;
-                height: 15vh;
+                height: 20vh;
             }
         }
 
@@ -114,7 +115,8 @@
             }
 
             span {
-                color: green;
+                margin-top: 10px;
+                color: #ECD06F;
             }
 
         }
@@ -125,20 +127,35 @@
         height: 5vh;
         padding: 2vh 0 2vh 0;
         font-size: medium;
+        background-color: #ECD06F;
+        overflow-y: hidden;
+
+        @include mobile {
+            height: 2vh;
+            font-size: 10px;
+        }
 
 
         span {
             margin-right: 40vw;
+
+            @include mobile {
+                margin-right: 15vw;
+            }
         }
 
-        ul {
+        .primary-navigation {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding-right: 10vw;
+            padding-right: 5vw;
             align-items: center;
-            text-decoration: none;
-            color: red;
+
+            a {
+                text-decoration: none;
+                color: #777777;
+            }
+
 
         }
     }
