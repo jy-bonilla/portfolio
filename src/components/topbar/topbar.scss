@@ -21,8 +21,10 @@
 
         @media screen and (min-width: 830px) {
             .logo {
-                padding: 1rem;
+                display: flex;
+                align-items: center;
                 padding-right: 2rem;
+                padding-left: 2rem;
 
                 a {
 
@@ -41,7 +43,7 @@
 
                 a {
                     text-decoration: none;
-                    font-size: 17px;
+                    font-size: 23px;
                     font-weight: 500;
                     color: #dddddd;
                     padding-left: .2rem;
@@ -61,16 +63,19 @@
 
 
             .twitterIcon {
-                margin-left: 1rem;
+                margin-left: 2rem;
+                font-size: xx-large;
             }
 
 
             .linkedInIcon {
-                margin-left: 1rem;
+                margin-left: 2rem;
+                font-size: xx-large;
             }
 
             .emailIcon {
-                margin-left: 1rem;
+                margin-left: 2rem;
+                font-size: xx-large;
             }
         }
     }

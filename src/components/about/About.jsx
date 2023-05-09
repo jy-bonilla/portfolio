@@ -1,9 +1,9 @@
-import '../about/about.scss'
+import './about.scss';
 
 
 export default function About() {
     return (
-        <div className="about" id="about">
+        <div className="about" id="about" >
             <h2>About Me</h2>
             <p>
                 I'm a software developer based in Northern Virginia.

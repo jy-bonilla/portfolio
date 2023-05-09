@@ -8,7 +8,7 @@ export default function Intro() {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["a software developer", "designer"],
+            strings: ["a fullstack developer", "designer"],
             startDelay: 200,
             typeSpeed: 70,
             backSpeed: 55,
