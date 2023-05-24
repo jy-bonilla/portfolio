@@ -10,7 +10,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <div className="wrapper">
                 <div className="logo">
                     <a href="#intro">
-                        bonillaCodes.
+                        <img src="/assets/mainLogo2.png" alt="" />
                     </a>
                 </div>
                 <ul className="primary-navigation">
