@@ -31,9 +31,15 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     </li>
                 </ul>
                 <div className="itemContainer">
-                    <EmailIcon className="emailIcon" />
-                    <TwitterIcon className="twitterIcon" />
-                    <LinkedInIcon className="linkedInIcon" />
+                    <a href="www.jy.bonillagil@gmail.com">
+                        <EmailIcon className="emailIcon" />
+                    </a>
+                    <a href="https://www.twitter.com/bonillacodes">
+                        <TwitterIcon className="twitterIcon" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/bonillacodes/">
+                        <LinkedInIcon className="linkedInIcon" />
+                    </a>
                     <div className="right">
                         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                             <span className="line1"></span>

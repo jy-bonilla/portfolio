@@ -28,7 +28,7 @@ export default function Contact() {
             <footer>
                 <ul className="primary-navigation">
                     <span>
-                        <a href="intro">© bonillaCodes</a>
+                        <a href="#intro">© bonillaCodes</a>
                     </span>
                     <li>
                         <a href="#about">about</a>
