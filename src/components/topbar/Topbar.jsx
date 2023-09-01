@@ -1,6 +1,5 @@
 import "./topbar.scss"
 import EmailIcon from '@mui/icons-material/Email';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
@@ -34,9 +33,9 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     <a href="www.jy.bonillagil@gmail.com">
                         <EmailIcon className="emailIcon" />
                     </a>
-                    <a href="https://www.twitter.com/bonillacodes">
-                        <TwitterIcon className="twitterIcon" />
-                    </a>
+                    {/* <a href="https://www.twitter.com/bonillacodes">
+                        <img className="twitterXICon" src="assets/icons8-twitterx-48.png" alt="twitterX" />
+                    </a> */}
                     <a href="https://www.linkedin.com/in/bonillacodes/">
                         <LinkedInIcon className="linkedInIcon" />
                     </a>

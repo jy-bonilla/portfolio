@@ -1,13 +1,23 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 import "./contact.scss";
 
 
 export default function Contact() {
 
     const [message, setMessage] = useState(false)
+    const form = useRef();
     const handleSubmit = (e) => {
         e.preventDefault();
         setMessage(true)
+
+        emailjs.sendForm('service_pdql6g9', 'template_82wmmio', form.current, 'CfQpMeCgw_GOmzrx_')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset()
     }
     return (
         <div className="contact" id="contact">
@@ -17,10 +27,13 @@ export default function Contact() {
                     to discuss a freelance project, else if you want to <span className="connect">say hello</span>, feel free
                     to cotact me on social media, or send me a message!
                 </p>
-                <form onSubmit={handleSubmit}>
-                    <input type="text" placeholder="name" />
-                    <input type="text" placeholder="email" />
-                    <textarea placeholder="message"></textarea>
+                <form ref={form} onSubmit={handleSubmit}>
+                    <label className="contactLabel">Name</label>
+                    <input type="text" name="user_name" required />
+                    <label className="contactLabel">Email</label>
+                    <input type="text" name="user_email" required />
+                    <label className="contactLabel">Message</label>
+                    <textarea name="message"></textarea>
                     <button type="submit">Send Message</button>
                     {message && <span>Thanks, I will reply ASAP</span>}
                 </form>
