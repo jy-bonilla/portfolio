@@ -30,7 +30,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     </li>
                 </ul>
                 <div className="itemContainer">
-                    <a href="www.jy.bonillagil@gmail.com">
+                    <a href="#contact">
                         <EmailIcon className="emailIcon" />
                     </a>
                     {/* <a href="https://www.twitter.com/bonillacodes">
