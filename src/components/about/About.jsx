@@ -4,16 +4,21 @@ import './about.scss';
 export default function About() {
     return (
         <div className="about" id="about" >
-            <h2>About Me</h2>
-            <p>
-                I'm a software developer based in Northern Virginia.
-            </p>
-            <p>
-                My focus is on creating websites whicha are accesible,
-                responsive and customer driven. The technologies which I'm currently
-                using to achieve these goals are HTML/CSS and JavaScript on the client side,
-                Node.js and Express on the server side along with the React framework.
-            </p>
+            <div className="aboutDescr">
+                <h2>about. </h2>
+                <h3>
+                    I'm a software developer based in Northern Virginia.
+                </h3>
+                <p>
+                    I enjoy turning complex problems into simple, beautiful intuitive and accessible
+                    solutions through the implementation of various technologies. When I'm not working on my
+                    coding craft, you'll find me cooking, lost in a Sci-Fi novel or tinkering away with some
+                    electronic device in my garage.
+                </p>
+            </div>
+            <div className="image">
+                <img src="assets/joseBonillaBlank.png" alt="smiling man" />
+            </div>
         </div>
     )
 }

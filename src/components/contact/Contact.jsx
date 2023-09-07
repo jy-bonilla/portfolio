@@ -55,9 +55,6 @@ export default function Contact() {
                     <li>
                         <a href="#testimonials">testimonials</a>
                     </li>
-                    <li>
-                        <a href="#contact">contact</a>
-                    </li>
                 </ul>
             </footer>
         </div>

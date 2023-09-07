@@ -40,10 +40,6 @@
                     }
                 }
 
-
-
-
-
             }
 
             .primary-navigation {
@@ -65,7 +61,7 @@
                 display: flex;
                 align-items: center;
                 color: #dddddd;
-                padding-right: 3rem;
+                padding-right: 5rem;
                 padding-left: 1rem;
                 margin: 0;
             }
@@ -73,19 +69,13 @@
 
 
             .twitterIcon {
-                margin-left: 2rem;
-
+                margin-left: 4rem;
 
             }
 
 
             .linkedInIcon {
                 margin-left: 4rem;
-                // font-size: xx-large;
-            }
-
-            .emailIcon {
-                margin-left: 2rem;
 
             }
         }
@@ -118,20 +108,18 @@
             color: #dddddd;
             padding-right: 0rem;
             padding-left: 0rem;
-
         }
 
-        .twitterXICon {
-            display: none;
-        }
 
-        .linkedInIcon {
-            display: none;
-        }
 
-        .emailIcon {
-            display: none;
-        }
+        // .twitterXICon {
+        //     display: none;
+
+        // }
+
+        // .linkedInIcon {
+        //     display: none;
+        // }
 
     }
 

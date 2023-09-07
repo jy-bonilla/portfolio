@@ -1,10 +1,47 @@
 @import "../../global.scss";
 
 .about {
+    display: flex;
     background-color: #f5f8fd;
     font-weight: 500;
 
     @include mobile {
         flex-direction: column;
     }
+
+}
+
+.aboutDescr {
+    display: flex;
+    flex-direction: column;
+    flex: 3.5;
+    margin-top: 70px;
+    margin-left: 55px;
+}
+
+.image {
+    display: flex;
+    flex: 4;
+    height: 450px;
+}
+
+h2 {
+    margin-top: 50px;
+    color: #333333;
+    font-size: 55px;
+}
+
+h3 {
+    margin-top: 15px;
+    font-size: large;
+    color: #404040;
+    font-size: 24px;
+}
+
+p {
+    margin-top: 13px;
+    color: #404040;
+    font-size: 18px;
+    font-style: double;
+    line-height: 1.5;
 }
