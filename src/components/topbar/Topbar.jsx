@@ -35,6 +35,9 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                         <a href="https://www.linkedin.com/in/bonillacodes/">
                             <i className="linkedInIcon" class="fa-brands fa-linkedin-in"></i>
                         </a>
+                        <a href="https://github.com/jy-bonilla">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
                     </div>
                     <div className="right">
                         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>

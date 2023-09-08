@@ -21,6 +21,7 @@
         overflow: hidden;
 
         @media screen and (min-width: 830px) {
+
             .logo {
                 width: 300px;
                 height: 100px;
@@ -57,6 +58,15 @@
                 }
             }
 
+            .socialMedia {
+                a {
+                    padding-right: 1rem;
+                    padding-right: 1rem;
+                    font-size: 23px;
+                }
+            }
+
+
             .itemContainer {
                 display: flex;
                 align-items: center;
@@ -64,19 +74,6 @@
                 padding-right: 5rem;
                 padding-left: 1rem;
                 margin: 0;
-            }
-
-
-
-            .twitterIcon {
-                margin-left: 4rem;
-
-            }
-
-
-            .linkedInIcon {
-                margin-left: 4rem;
-
             }
         }
     }
@@ -109,18 +106,6 @@
             padding-right: 0rem;
             padding-left: 0rem;
         }
-
-
-
-        // .twitterXICon {
-        //     display: none;
-
-        // }
-
-        // .linkedInIcon {
-        //     display: none;
-        // }
-
     }
 
     .right {
