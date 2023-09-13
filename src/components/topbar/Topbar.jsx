@@ -29,13 +29,13 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                 </ul>
                 <div className="itemContainer">
                     <div className="socialMedia">
-                        <a href="https://twitter.com/bonillacodes/">
+                        <a href="https://twitter.com/bonillacodes/" target="_blank" rel="noreferrer">
                             <i className="twitterIcon" class="fa-brands fa-x-twitter"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/bonillacodes/">
+                        <a href="https://www.linkedin.com/in/bonillacodes/" target="_blank" rel="noreferrer">
                             <i className="linkedInIcon" class="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <a href="https://github.com/jy-bonilla">
+                        <a href="https://github.com/jy-bonilla" target="_blank" rel="noreferrer">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>

@@ -14,7 +14,7 @@ export default function About() {
                         I enjoy turning complex problems into simple, beautiful intuitive and accessible
                         solutions through the implementation of various technologies. When I'm not working on my
                         coding craft, you'll find me cooking, lost in a Sci-Fi novel or tinkering away with some
-                        electronic device the garage.
+                        electronic device in the garage.
                     </p>
                 </div>
                 <div className="image">
@@ -48,15 +48,6 @@ export default function About() {
                     </li>
                     <li>
                         <i class="fa-brands fa-square-github"></i>
-                    </li>
-                    <li>
-
-                    </li>
-                    <li>
-
-                    </li>
-                    <li>
-
                     </li>
                 </ul>
             </div>

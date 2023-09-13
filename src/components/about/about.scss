@@ -19,14 +19,14 @@
 }
 
 .textDesc {
-    flex: 3.9;
+    flex: 3.8;
     padding: 70px;
     padding-left: 55px;
 }
 
 .image {
     display: flex;
-    flex: 4;
+    flex: 4.2;
     height: 450px;
 
 }
@@ -67,12 +67,14 @@ h3 {
 
 h4 {
     display: flex;
+    font-size: 18px;
+    color: #404040;
     justify-content: center;
     padding-bottom: 60px;
 }
 
 p {
-    margin-top: 14px;
+    margin-top: 17px;
     color: #404040;
     font-size: 18px;
     font-style: double;
