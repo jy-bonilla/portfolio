@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Welcome to my personal portfolio project! I used the Create React App to boostrapp this project please follow the instructions if you wish to run this 
+Welcome to my personal portfolio project! I used the Create React App to boostrapp this project please follow the instructions below if you wish to run this 
 project in development mode. Thank you!!
 
 ### `npm start`
